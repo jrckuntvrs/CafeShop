@@ -1,0 +1,56 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .toggle-btn {
+    display: block;
+  }
+  .sidebar {
+    transform: translateX(-100%);
+  }
+  .sidebar.hide {
+    transform: translateX(0);
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}
+
+/* caousel responsive */
+@media screen and (max-width: 768px) {
+  .carousel-caption {
+    bottom: 10%; /* Adjust further for very small screens */
+  }
+
+  .carousel-caption h5 {
+    font-size: 2rem; /* Resize heading for small screens */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Resize text for small screens */
+  }
+  .carousel-caption .btn {
+    padding: 0.5rem 2rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 498px) {
+  .carousel-caption .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 360px) {
+  .carousel-caption h5 {
+    font-size: 1.5rem; /* Resize heading for small screens */
+  }
+
+  .carousel-caption p {
+    font-size: 0.7rem; /* Resize text for small screens */
+  }
+  .carousel-caption .btn {
+    padding: 0.5rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
